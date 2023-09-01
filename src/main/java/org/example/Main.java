@@ -1,20 +1,19 @@
 package org.example;
 
-
 import javax.swing.*;
+import java.awt.geom.Area;
 
 public class Main {
     public static void main(String[] args) {
 
-     Tiempo tiempo = new Tiempo();
+        Tiempo tiempo = new Tiempo();
+        tiempo.setHoras(5);
+        tiempo.setMinutos(34);
+        tiempo.setSegundos(27);
 
-     tiempo.setHoras(0);
-     tiempo.setMinutos(12);
-     tiempo.setSegundos(12);
-        JOptionPane.showMessageDialog(null,get"h");
+        JOptionPane.showMessageDialog(null, tiempo.toString());
 
-
+        JOptionPane.showMessageDialog(null,tiempo.toString());
 
     }
-
 }

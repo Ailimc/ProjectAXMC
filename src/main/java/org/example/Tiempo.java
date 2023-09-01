@@ -1,30 +1,9 @@
 package org.example;
 
-public class Tiempo extends Main{
-    private int Suma;
-    private int Resta;
+public class Tiempo {
+    private int horas, minutos, segundos;
 
-    public int getSuma() {
-        return Suma;
-    }
-
-    public void setSuma(int suma) {
-        Suma = suma;
-    }
-
-    public int getResta() {
-        return Resta;
-    }
-
-    public void setResta(int resta) {
-        Resta = resta;
-    }
-
-    private int horas;
-    private int minutos;
-    private int segundos;
-
-    public int getHoras() {
+    public int getHoras(int i) {
         return horas;
     }
 
@@ -32,7 +11,7 @@ public class Tiempo extends Main{
         this.horas = horas;
     }
 
-    public int getMinutos() {
+    public int getMinutos(int i) {
         return minutos;
     }
 
@@ -40,7 +19,7 @@ public class Tiempo extends Main{
         this.minutos = minutos;
     }
 
-    public int getSegundos() {
+    public int getSegundos(int i) {
         return segundos;
     }
 
@@ -50,7 +29,7 @@ public class Tiempo extends Main{
 
     @Override
     public String toString() {
-            return this.horas + "h" + this.minutos + "m" + this.segundos + "s" ;
-
+        return this.horas + "h " +  this.minutos + "m " + this.segundos + "s ";
     }
 }
+
